@@ -3,10 +3,6 @@ import cv2
 # 웹캠 캡처기 생성
 cap = cv2.VideoCapture(0)
 
-# 비디오 코덱 설정
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-
-
 while True:
     # 캡처기로부터 프레임 읽기
     ret, frame = cap.read()
